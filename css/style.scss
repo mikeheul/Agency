@@ -132,7 +132,7 @@ main {
 		min-height: 100vh;
 		background: url(../img/bg2.jpg);
 		background-attachment: fixed;
-		background-position: right;
+		background-position: left;
 		background-repeat: no-repeat;
 		background-size: cover;
 		.intro-content {
@@ -213,12 +213,21 @@ section {
 					left: 0;
 					height: 100%;
 					width: 100%;
-					padding: 20px;
+					padding: 25px;
 					background: rgba(0, 0, 0, 0.847);
 					color: #fff;
 					opacity: 0;
 					transition: .5s;
-					// border-radius: 10px;
+
+					h3 {
+						font-size: 35px;
+						font-weight: 400;
+					}
+
+					p {
+						font-weight: 200;
+						letter-spacing: 2px;
+					}
 				}
 				&:hover {
 					.project-overlay {
@@ -232,6 +241,7 @@ section {
 
 .about .row {
 	.about-text {
+		text-align: justify;
 		padding: 10px 30px 10px 30px;
 		h3 {
 			margin: 15px 0;
@@ -334,9 +344,10 @@ section {
 }
 
 .blog-item-text {
+	text-align: justify;
 	background: #fff;
 	box-shadow: rgba(60, 60, 60, 0.068) 0px 20px 25px -5px, rgba(33, 33, 33, 0.04) 0px 10px 10px -5px;
-	padding: 30px 20px 50px 20px;
+	padding: 30px 30px 50px 30px;
 	.date, .desc {
 		font-weight: 200;
 		letter-spacing: 1px;
@@ -384,6 +395,7 @@ footer {
 			min-height: 100vh;
 			max-width: 100%;
 			background-size: cover;
+			background-position: center;
 			top: 0;
 			left: 0;
 		}
@@ -408,7 +420,15 @@ footer {
 	nav {
 		left: -100%;
 	}
-	section {
+	section, footer {
 		margin-left: 0;
+	}
+	.contact-item {
+		p {
+			padding: 0;
+		}
+	}
+	.team-text p {
+		max-width: 100%;
 	}
 }
