@@ -235,8 +235,58 @@ section {
 }
 
 .team-item-img, .blog-item-img {
+	position: relative;
 	img {
 		width: 100%;
+		display: block;
+	}
+}
+
+.team-item {
+	.overlay {
+		position: absolute;
+		top: 0; left: 0;
+		height: 100%; width: 100%;
+		background: rgba(26, 26, 26, 0.817);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		opacity: 0;
+		transition: .5s;
+		h3 {
+			font-size: 30px;
+			font-weight: 200;
+			letter-spacing: 3px;
+		}
+		.team-social {
+			display: flex;
+			gap: 20px;
+			margin-top: 15px;
+			a {
+				ion-icon {
+					color: #fff;
+					font-size: 18px;
+				}
+			}
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+.blog-item-img {
+	overflow: hidden;
+	img {
+		transition: 0.5s;
+	}
+	&:hover {
+		img {
+			transform: scale(1.05);
+			filter: grayscale(1);
+		}
 	}
 }
 

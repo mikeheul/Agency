@@ -230,8 +230,56 @@ section .section-heading h2 {
   padding: 10px 25px 10px 0;
 }
 
+.team-item-img, .blog-item-img {
+  position: relative;
+}
 .team-item-img img, .blog-item-img img {
   width: 100%;
+  display: block;
+}
+
+.team-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(26, 26, 26, 0.817);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+.team-item .overlay h3 {
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: 3px;
+}
+.team-item .overlay .team-social {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+.team-item .overlay .team-social a ion-icon {
+  color: #fff;
+  font-size: 18px;
+}
+.team-item .overlay:hover {
+  opacity: 1;
+}
+
+.blog-item-img {
+  overflow: hidden;
+}
+.blog-item-img img {
+  transition: 0.5s;
+}
+.blog-item-img:hover img {
+  transform: scale(1.05);
+  filter: grayscale(1);
 }
 
 .blog-item-text {
