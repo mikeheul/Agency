@@ -34,6 +34,28 @@
 	flex: 0 0 20%;
 	max-width: 20%;
 }
+
+input, textarea {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #ccc;
+	padding: 15px;
+	width: 100%;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+
+.btn {
+	display: inline-block;
+	margin-top: 40px;
+	padding: 10px 40px;
+	background: #525252;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 nav {
 	position: fixed;
 	min-height: 100vh;
@@ -140,7 +162,7 @@ section {
 	min-height: 100vh;
 	max-width: 100%;
 	margin-left: 25%;
-	padding: 20px 35px;
+	padding: 20px 70px;
 	position: relative;
 
 	.section-heading {
@@ -235,7 +257,7 @@ section {
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
-.team .row, .blog .row {
+.team .row, .blog .row, .contact .row {
 	max-width: 100%;
 	justify-content: center;
 }
@@ -250,7 +272,7 @@ section {
 	}
 }
 
-.team-item, .blog-item {
+.team-item, .blog-item, .contact-item {
 	padding: 10px 25px 10px 0;
 }
 
@@ -326,6 +348,31 @@ section {
 	h4 {
 		margin: 20px 0;
 		font-size: 20px;
+	}
+}
+
+.contact-item {
+	h4 {
+		margin: 15px 0;
+	}
+	p {
+		font-weight: 200;
+		padding: 0 100px 0 0;
+	}
+}
+
+footer {
+	margin-left: 25%;
+	height: 200px;
+	background: rgb(228, 228, 228);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		color: rgb(72, 72, 72);
+		font-size: 40px;
+		font-weight: 600;
 	}
 }
 
