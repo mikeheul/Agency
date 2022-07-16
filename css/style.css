@@ -42,7 +42,7 @@ nav {
   min-height: 100vh;
   top: 0;
   left: 0;
-  width: 20%;
+  width: 25%;
   background: #101010;
   color: #fff;
   display: flex;
@@ -95,7 +95,7 @@ main {
 main .intro {
   position: relative;
   height: 100%;
-  background: url(../img/bg.jpg);
+  background: url(../img/bg2.jpg);
   background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
@@ -126,7 +126,7 @@ main .intro .intro-content p {
 section {
   height: 100%;
   max-width: 100%;
-  margin-left: 20%;
+  margin-left: 25%;
   padding: 50px 35px;
 }
 
