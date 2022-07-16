@@ -8,7 +8,7 @@
 }
 
 .gray {
-  background: rgb(237, 237, 237);
+  background: #f3f3f3;
 }
 
 .wrapper {
@@ -144,6 +144,7 @@ section {
   max-width: 100%;
   margin-left: 25%;
   padding: 20px 35px;
+  position: relative;
 }
 section .section-heading {
   margin: 40px 0;
@@ -213,17 +214,34 @@ section .section-heading h2 {
   font-size: 30px;
   color: rgb(79, 79, 79);
 }
+.about .row .about-text h4 {
+  color: rgb(148, 148, 148);
+  font-weight: 300;
+  letter-spacing: 3px;
+}
 .about .row .about-text p {
   font-weight: 200;
 }
 
+.about-img {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
 .about-img img {
   width: 100%;
+  display: block;
 }
 
 .team .row, .blog .row {
   max-width: 100%;
   justify-content: center;
+}
+
+.team-text p {
+  margin-top: 30px;
+  font-weight: 200;
+  font-size: 18px;
+  max-width: 60%;
+  text-align: center;
 }
 
 .team-item, .blog-item {
@@ -232,6 +250,7 @@ section .section-heading h2 {
 
 .team-item-img, .blog-item-img {
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .team-item-img img, .blog-item-img img {
   width: 100%;
@@ -284,6 +303,7 @@ section .section-heading h2 {
 
 .blog-item-text {
   background: #fff;
+  box-shadow: rgba(60, 60, 60, 0.068) 0px 20px 25px -5px, rgba(33, 33, 33, 0.04) 0px 10px 10px -5px;
   padding: 30px 20px 50px 20px;
 }
 .blog-item-text .date, .blog-item-text .desc {
@@ -298,6 +318,7 @@ section .section-heading h2 {
   margin: 20px 0;
   font-size: 20px;
 }
+
 @media (max-width: 1200px) {
   main {
     display: flex;
@@ -317,9 +338,12 @@ section .section-heading h2 {
   .projects-item-container {
     flex-direction: column;
   }
-  .col-3 {
+  .col-2, .col-3 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .about .row .about-text {
+    text-align: center;
   }
 }
 @media (max-width: 980px) {
