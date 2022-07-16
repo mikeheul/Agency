@@ -137,7 +137,7 @@ section {
 				position: relative;
 				max-width: 100%;
 				background: yellow;
-				border-radius: 10px;
+				// border-radius: 10px;
 				cursor: pointer;
 				margin-right: 20px;
 				.project-img {
@@ -147,7 +147,7 @@ section {
 						width: 100%;
 						object-fit: cover;
 						object-position: center;
-						border-radius: 10px;
+						// border-radius: 10px;
 						display: block;
 					}
 				}
@@ -162,7 +162,7 @@ section {
 					color: #fff;
 					opacity: 0;
 					transition: .5s;
-					border-radius: 10px;
+					// border-radius: 10px;
 				}
 				&:hover {
 					.project-overlay {

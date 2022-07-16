@@ -142,7 +142,6 @@ section {
   position: relative;
   max-width: 100%;
   background: yellow;
-  border-radius: 10px;
   cursor: pointer;
   margin-right: 20px;
 }
@@ -156,7 +155,6 @@ section {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border-radius: 10px;
   display: block;
 }
 .projects .projects-container .projects-item-container .project-item .project-overlay {
@@ -170,7 +168,6 @@ section {
   color: #fff;
   opacity: 0;
   transition: 0.5s;
-  border-radius: 10px;
 }
 .projects .projects-container .projects-item-container .project-item:hover .project-overlay {
   opacity: 1;
