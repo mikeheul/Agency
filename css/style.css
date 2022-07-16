@@ -70,13 +70,17 @@ nav .links ul li {
   list-style: none;
   line-height: 50px;
   border-bottom: 1px solid rgb(30, 30, 30);
+  transition: 1s;
 }
 nav .links ul li a {
   text-decoration: none;
   color: rgb(137, 137, 137);
   transition: 0.8s;
 }
-nav .links ul li a:hover {
+nav .links ul li:hover {
+  transform: translateX(20px);
+}
+nav .links ul li:hover a {
   color: #fff;
 }
 nav .social-credits ul {
@@ -86,6 +90,14 @@ nav .social-credits ul {
 }
 nav .social-credits ul li {
   list-style: none;
+  transition: 0.5s;
+}
+nav .social-credits ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+nav .social-credits ul li:hover {
+  transform: translateY(-10px);
 }
 
 main {
