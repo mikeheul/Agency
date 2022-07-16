@@ -6,6 +6,10 @@
 	font-family: "Oswald";
 	scroll-behavior: smooth;
 }
+
+.gray {
+	background: rgb(237, 237, 237);
+}
 .wrapper {
 	display: flex;
 }
@@ -103,7 +107,7 @@ main {
 	min-height: 100vh;
 	.intro {
 		position: relative;
-		height: 100%;
+		min-height: 100vh;
 		background: url(../img/bg2.jpg);
 		background-attachment: fixed;
 		background-position: right;
@@ -133,10 +137,27 @@ main {
 	}
 }
 section {
-	height: 100%;
+	min-height: 100vh;
 	max-width: 100%;
 	margin-left: 25%;
-	padding: 50px 35px;
+	padding: 20px 35px;
+
+	.section-heading {
+		margin: 40px 0;
+		p {
+			font-size: 15px;
+			font-weight: 300;
+			letter-spacing: 5px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}	
+		h2 {
+			font-size: 35px;
+			font-weight: 500;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+		}
+	}
 }
 .projects {
 	.projects-container {
@@ -183,6 +204,59 @@ section {
 				}
 			}
 		}
+	}
+}
+
+.about .row .about-text {
+	padding: 10px 30px 10px 30px;
+	h3 {
+		margin: 15px 0;
+		font-size: 30px;
+		color: rgb(79, 79, 79);
+	}
+	p {
+		font-weight: 200;
+	}
+}
+
+.about-img {
+	img {
+		width: 100%;
+	}
+}
+
+.team .row, .blog .row {
+	max-width: 100%;
+	justify-content: center;
+}
+
+.team-item, .blog-item {
+	padding: 10px 25px 10px 0;
+}
+
+.team-item-img, .blog-item-img {
+	img {
+		width: 100%;
+	}
+}
+
+.blog-item-text {
+	background: #fff;
+	padding: 30px 20px 50px 20px;
+	.date, .desc {
+		font-weight: 200;
+		letter-spacing: 1px;
+	}
+	.date {
+		margin-bottom: 5px;
+		font-size: 12px;
+	}
+	h4 {
+		margin: 20px 0;
+		font-size: 20px;
+	}
+	.desc {
+
 	}
 }
 
